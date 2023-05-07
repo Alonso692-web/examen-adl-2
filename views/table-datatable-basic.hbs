@@ -15,7 +15,7 @@
 	<meta name="format-detection" content="telephone=no">
 	
 	<!-- PAGE TITLE HERE -->
-	<title>Dolab Personal Banking Admin</title>
+	<title>SiVeO</title>
 	
 	<!-- FAVICONS ICON -->
 	<link rel="shortcut icon" type="image/png" href="images/favicon.png">
@@ -673,8 +673,8 @@
                         <div class="card">
                             <div class="card-header">
                                 <h4 class="card-title">Alta de Productos</h4>
-								<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModalGuardar">Nuevo</button>
-								<div class="modal fade" id="exampleModalGuardar">
+								<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModalCreate">Nuevo</button>
+								<div class="modal fade" id="exampleModalCreate">
                                         <div class="modal-dialog modal-dialog-centered" role="document">
                                             <div class="modal-content">
                                                 <div class="modal-header">
@@ -709,7 +709,7 @@
 																<option>Nestle</option>
 																</select>
 															</div>
-															<div>
+															<div class="mb-3 col-md-3">
 																<label>Precio</label>
 																<input type="number" class="form-control input-default " placeholder="0">
 															</div>
@@ -723,25 +723,7 @@
                                             </div>
                                         </div>
                                 </div>
-							</div>
-                            <div class="card-body">
-                                <div class="table-responsive">
-                                    <table id="example3" class="display" style="min-width: 845px">
-                                        <thead>
-                                            <tr>
-                                                <th>Descripción</th>
-                                                <th>Precio</th>
-                                                <th>Acciones</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Chocolate</td>
-                                                <td>$15.00</td>
-                                                <td>
-													<div class="d-flex">
-														<a href="" class="btn btn-primary shadow btn-xs sharp me-1" data-bs-toggle="modal" data-bs-target="#exampleModalActualizar"><i class="fas fa-pencil-alt"></i></a>
-														<div class="modal fade" id="exampleModalActualizar">
+								<div class="modal fade" id="exampleModalUpdate">
 															<div class="modal-dialog modal-dialog-centered" role="document">
 																<div class="modal-content">
 																	<div class="modal-header">
@@ -789,9 +771,8 @@
 																	</div>
 																</div>
 															</div>
-                                						</div>
-														<a href="" class="btn btn-danger shadow btn-xs sharp" data-bs-toggle="modal" data-bs-target="#exampleModalBorrar"><i class="fa fa-trash" ></i></a>
-														<div class="modal fade" id="exampleModalBorrar">
+                                </div>
+								<div class="modal fade" id="exampleModalDelete">
 															<div class="modal-dialog modal-dialog-centered" role="document">
 																<div class="modal-content">
 																	<div class="modal-header">
@@ -808,7 +789,28 @@
 																	</div>
 																</div>
 															</div>
-                                						</div>
+								</div>
+							</div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table id="example3" class="display" style="min-width: 845px">
+                                        <thead>
+                                            <tr>
+                                                <th>Descripción</th>
+                                                <th>Precio</th>
+                                                <th>Acciones</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Chocolate</td>
+                                                <td>$15.00</td>
+                                                <td>
+													<div class="d-flex">
+														<a href="" class="btn btn-primary shadow btn-xs sharp me-1" data-bs-toggle="modal" data-bs-target="#exampleModalUpdate"><i class="fas fa-pencil-alt"></i></a>
+														
+														<a href="" class="btn btn-danger shadow btn-xs sharp" data-bs-toggle="modal" data-bs-target="#exampleModalDelete"><i class="fa fa-trash" ></i></a>
+														
 													</div>												
 												</td>												
                                             </tr>
@@ -817,8 +819,8 @@
                                                 <td>$10.00</td>
                                                 <td>
 													<div class="d-flex">
-														<a href="#" class="btn btn-primary shadow btn-xs sharp me-1"><i class="fas fa-pencil-alt"></i></a>
-														<a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
+														<a href="" class="btn btn-primary shadow btn-xs sharp me-1" data-bs-toggle="modal" data-bs-target="#exampleModalUpdate"><i class="fas fa-pencil-alt"></i></a>
+														<a href="" class="btn btn-danger shadow btn-xs sharp" data-bs-toggle="modal" data-bs-target="#exampleModalDelete"><i class="fa fa-trash"></i></a>
 													</div>												
 												</td>												
                                             </tr>
@@ -827,8 +829,8 @@
                                                 <td>$60.00</td>
                                                 <td>
 													<div class="d-flex">
-														<a href="#" class="btn btn-primary shadow btn-xs sharp me-1"><i class="fas fa-pencil-alt"></i></a>
-														<a href="#" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
+														<a href="" class="btn btn-primary shadow btn-xs sharp me-1" data-bs-toggle="modal" data-bs-target="#exampleModalUpdate"><i class="fas fa-pencil-alt"></i></a>
+														<a href="" class="btn btn-danger shadow btn-xs sharp" data-bs-toggle="modal" data-bs-target="#exampleModalDelete"><i class="fa fa-trash"></i></a>
 													</div>												
 												</td>												
                                             </tr>
